@@ -1,0 +1,78 @@
+/* GLOBAL */
+html,
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    /* font-size: 1rem; */
+    /* font-size: 1pt;
+    font-size: 1vh;
+    font-size: 1vw; */
+    background-color: #8a8b8c;
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+
+header li {
+    display: inline-block;
+    padding: 0 1.7rem;
+}
+
+/* lấy thẻ a con trực tiếp của thẻ header */
+header>a {
+    color: #fff;
+}
+
+/* những thẻ a thuộc trong khu vực thẻ header bao gồm: cha , cháu, chát , chít */
+header a {
+    color: #fff;
+}
+
+#carousel {
+    text-align: center;
+    color: white;
+    background-image: url(../images/home_slider.jpg);
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#carousel button {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #e62b4a;
+    color: #fff;
+    border: 1px solid #e62b4a;
+    cursor: pointer;
+}
